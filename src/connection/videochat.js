@@ -91,7 +91,7 @@ function VideoChatApp(props) {
   let UserVideo;
   if (stream) {
     UserVideo = (
-      <Video playsInline muted ref={userVideo} autoPlay style = {{width: "50%", height: "50%"}} />
+      <Video playsInline muted ref={userVideo} autoPlay style = {{width: "100%", height: "100%"}} />
     );
   }
 
@@ -99,26 +99,26 @@ function VideoChatApp(props) {
 
   if (callAccepted) {
     mainView = (
-      <Video playsInline ref={partnerVideo} autoPlay style = {{width: "50%", height: "50%"}} />
+      <Video playsInline ref={partnerVideo} autoPlay style = {{width: "100%", height: "100%"}} />
     );
   } else if (receivingCall) {
     mainView = (
       <div>
-        <h1>{props.opponentUserName} memanggil </h1>
-        <button onClick={acceptCall}><h1>Terima</h1></button>
+        <h4>{props.opponentUserName} memanggil </h4>
+        <button onClick={acceptCall}><h4>Terima</h4></button>
       </div>
     )
   } else if (isCalling) {
     mainView = (
       <div>
-        <h1>Sedang memanggil {props.opponentUserName}...</h1>
+        <h4>Sedang memanggil {props.opponentUserName}...</h4>
       </div>
     )
   } else {
     mainView = (
       <button onClick = {() => {
         callPeer(props.opponentSocketId)
-      }}><h1>Mengbrol dengan teman</h1></button>
+      }}><h4>Mengbrol dengan teman</h4></button>
     )
   }
 
@@ -127,6 +127,8 @@ function VideoChatApp(props) {
   return (<Container>
       <Row>
         {mainView}
+      </Row>
+      <Row>
         {UserVideo}
       </Row>
     </Container>);

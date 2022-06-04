@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^16.13.1",
+    "react-foundation": "^0.9.7",
     "react-konva": "^16.13.0-3",
     "react-modal": "^3.15.1",
     "react-router-dom": "^5.2.0",

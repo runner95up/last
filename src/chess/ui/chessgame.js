@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import { ColorContext } from "../../context/colorcontext";
 import VideoChatApp from "../../connection/videochat";
 import "./tamp.css";
+import { Row, Column } from 'react-foundation';
 const socket = require("../../connection/socket").socket;
 
 class ChessGame extends React.Component {
@@ -302,35 +303,37 @@ const ChessGameWrapper = (props) => {
               King Chess
             </a>
           </nav>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h4> Saya : {props.myUserName} </h4>
-                <VideoChatApp
-                  mySocketId={socket.id}
-                  opponentSocketId={opponentSocketId}
-                  myUserName={props.myUserName}
-                  opponentUserName={opponentUserName}
-                />
-              </div>
-              <div class="col">
-                <ChessGame
-                  playAudio={play}
-                  gameId={gameid}
-                  color={color.didRedirect}
-                />
-              </div>
-              <div class="col">
-                <h4> Teman : {opponentUserName} </h4>
-                <VideoChatApp
-                  mySocketId={socket.id}
-                  opponentSocketId={opponentSocketId}
-                  myUserName={props.myUserName}
-                  opponentUserName={opponentUserName}
-                />
-              </div>
-            </div>
-          </div>
+<div style={{ display: 'flex',  justifyContent:'center', alignContent: "center", alignItems: "center", marginLeft: "auto", marginRight: "auto"}} >
+
+          <Row>
+            <Column>
+              <h4> Saya : {props.myUserName} </h4>
+              <VideoChatApp
+                mySocketId={socket.id}
+                opponentSocketId={opponentSocketId}
+                myUserName={props.myUserName}
+                opponentUserName={opponentUserName}
+              />
+            </Column>
+            <Column>
+              <ChessGame
+                playAudio={play}
+                gameId={gameid}
+                color={color.didRedirect}
+              />
+            </Column>
+            <Column>
+              <h4> Teman : {opponentUserName} </h4>
+              <VideoChatApp
+                mySocketId={socket.id}
+                opponentSocketId={opponentSocketId}
+                myUserName={props.myUserName}
+                opponentUserName={opponentUserName}
+              />
+            </Column>
+          </Row>
+
+</div>
         </div>
       ) : gameSessionDoesNotExist ? (
         <div>

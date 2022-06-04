@@ -85,7 +85,9 @@ class CreateNewGame extends React.Component {
                         <input
                           placeholder="Masukkan nama disini"
                           style={{
-                            width: "240px",
+                            marginTop:10+"px",
+                            marginBottom:10+"px",
+                            width: 100+"%",
                           }}
                           ref={this.textArea}
                           onInput={this.typingUserName}
@@ -131,7 +133,7 @@ class CreateNewGame extends React.Component {
                     <div class="col-md-3 col-sm-6">
                       <div class="our-team">
                         <div class="pic">
-                          <img src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"></img>
+                          <img src="https://raw.githubusercontent.com/runner95up/last/master/src/chess/assets/pic/vi.jpg"></img>
                         </div>
                         <h3 class="title">Violia Ruana Nur’aini Sagita</h3>
                         <span class="post">21051204004</span>
@@ -141,7 +143,7 @@ class CreateNewGame extends React.Component {
                     <div class="col-md-3 col-sm-6">
                       <div class="our-team">
                         <div class="pic">
-                          <img src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"></img>
+                          <img src="https://raw.githubusercontent.com/runner95up/last/master/src/chess/assets/pic/ar.jpg"></img>
                         </div>
                         <h3 class="title">Aryanti Nur Anisah</h3><br></br>
                         <span class="post">21051204010</span>
@@ -151,7 +153,7 @@ class CreateNewGame extends React.Component {
                     <div class="col-md-3 col-sm-6">
                       <div class="our-team">
                         <div class="pic">
-                          <img src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"></img>
+                          <img src="https://raw.githubusercontent.com/runner95up/last/master/src/chess/assets/pic/ra.jpg"></img>
                         </div>
                         <h3 class="title">Rahmat Hidayatullah</h3>
                         <span class="post">21051204020</span>
@@ -160,7 +162,7 @@ class CreateNewGame extends React.Component {
                     <div class="col-md-3 col-sm-6">
                       <div class="our-team">
                         <div class="pic">
-                          <img src="https://pbs.twimg.com/profile_images/1414439092373254147/JdS8yLGI_400x400.jpg"></img>
+                          <img src="https://raw.githubusercontent.com/runner95up/last/master/src/chess/assets/pic/sy.jpg"></img>
                         </div>
                         <h3 class="title">Syahril Caesa Mahira</h3>
                         <span class="post">21051204058</span>

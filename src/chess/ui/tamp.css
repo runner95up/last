@@ -1,0 +1,58 @@
+ 
+ 
+.share-options{ 
+   
+    transform-origin: bottom center;
+    transform: scale(1);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background: rgba(136, 136, 136, 0.5);
+    color: #fff;
+    padding: 20px;
+ 
+}
+
+.share-options.active{
+    transform: scale(1);
+    transition-delay: 5s;
+}
+ 
+
+ 
+.link-container{
+   
+    transition: 15s;
+    transition-delay: 5s;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.link{margin-left: 12px;
+    margin-top: 14px;
+    width: 80%;
+    height: 100%;
+    line-height: 40px;
+    color: #000;
+}
+
+.copy-btn{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: none;
+    height: 100%;
+    width: 30%;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+ 
